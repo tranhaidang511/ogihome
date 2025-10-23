@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogi Home - Comfortable Stay Near Nippori Station</title>
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.svg">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Ogi Home</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="language-selector">
+                    <button class="language-btn active" onclick="switchLanguage('en')">EN</button>
+                    <button class="language-btn" onclick="switchLanguage('ja')">JP</button>
+                    <button class="language-btn" onclick="switchLanguage('vi')">VI</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-slideshow">
+            <div class="slide active" style="background-image: url('../img/slide-00.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-01.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-02.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-03.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-04.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-05.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-06.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-07.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-08.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-09.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-10.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-11.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-12.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-13.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-14.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-15.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-16.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-17.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-18.jpg')"></div>
+            <div class="slide" style="background-image: url('../img/slide-19.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-20.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-21.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-22.JPG')"></div>
+        </div>
+        
+        <button class="slideshow-nav prev" onclick="changeSlide(-1)">❮</button>
+        <button class="slideshow-nav next" onclick="changeSlide(1)">❯</button>
+        
+        <div class="slideshow-controls">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1>Ogi Home - Your Comfort in Tokyo</h1>
+                <div class="airbnb-badges" style="margin: 20px 0;">
+                    <span class="badge superhost">🏆 Airbnb Superhost</span>
+                    <span class="badge guest-favorite">❤️ Airbnb Guest Favorite</span>
+                </div>
+                <p>Just 15 minutes by train from Nippori Station. Quiet, new home with private room, convenient location, and easy access to Narita Airport.</p>
+                <a href="#booking" class="btn">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Ogi Home?</h2>
+            <div class="airbnb-achievements" style="text-align: center; margin-bottom: 40px;">
+                <p style="font-size: 18px; color: #666; margin-bottom: 15px;">Recognized for Excellence on Airbnb</p>
+                <div class="airbnb-badges">
+                    <span class="badge superhost">🏆 Airbnb Superhost</span>
+                    <span class="badge guest-favorite">❤️ Airbnb Guest Favorite</span>
+                </div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Extra Spacious</h3>
+                    <p>Guests love this home's spaciousness for a comfortable stay. Your own private room in a quiet, new home.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚂</div>
+                    <h3>Perfect Location</h3>
+                    <p>Just 5 minutes walk to Ogi-Ohashi Station, 15 minutes to Nippori Station, and convenient access to Narita Airport.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏪</div>
+                    <h3>Convenience Store Nearby</h3>
+                    <p>Everything you need is just a 1-minute walk away. Perfect for late-night shopping or quick meals.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔑</div>
+                    <h3>Self Check-in</h3>
+                    <p>Check yourself in with the keypad. Easy and convenient arrival at any time after 3:00 PM.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📶</div>
+                    <h3>Fast WiFi</h3>
+                    <p>High-speed internet connection at 500 Mbps for all your work and entertainment needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚗</div>
+                    <h3>Free Parking</h3>
+                    <p>Free parking space available on premises (please contact us in advance to arrange).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="amenities" class="hosts">
+        <div class="container">
+            <h2 class="section-title">Amenities & Features</h2>
+            <div class="hosts-grid">
+                <div class="host-card">
+                    <div class="host-image" style="background-image: url('../img/slide-03.JPG');"></div>
+                    <div class="host-info">
+                        <h3>Private Bedroom</h3>
+                        <p>Comfortable & Equipped</p>
+                        <div class="host-features">
+                            <span class="host-feature">Double Bed</span>
+                            <span class="host-feature">Air Conditioner</span>
+                            <span class="host-feature">TV</span>
+                            <span class="host-feature">Mini Fridge</span>
+                            <span class="host-feature">Microwave</span>
+                            <span class="host-feature">Electric Kettle</span>
+                        </div>
+                        <p>Your private room includes all essentials: bed linens, towels, iron, clothing storage, and room-darkening shades for a comfortable stay.</p>
+                    </div>
+                </div>
+                <div class="host-card">
+                    <div class="host-image" style="background-image: url('../img/slide-13.JPG');"></div>
+                    <div class="host-info">
+                        <h3>Bathroom Facilities</h3>
+                        <p>Shared but Well-Equipped</p>
+                        <div class="host-features">
+                            <span class="host-feature">Hair Dryer</span>
+                            <span class="host-feature">Shampoo</span>
+                            <span class="host-feature">Conditioner</span>
+                            <span class="host-feature">Body Soap</span>
+                            <span class="host-feature">Hot Water</span>
+                        </div>
+                        <p>Shared toilet on the ground floor, washroom and bathroom on the 2nd floor. All amenities provided for your convenience.</p>
+                    </div>
+                </div>
+                <div class="host-card">
+                    <div class="host-image" style="background-image: url('../img/slide-01.JPG');"></div>
+                    <div class="host-info">
+                        <h3>Safety & Security</h3>
+                        <p>Your Peace of Mind</p>
+                        <div class="host-features">
+                            <span class="host-feature">Bedroom Lock</span>
+                            <span class="host-feature">Security Cameras</span>
+                            <span class="host-feature">Smoke Alarm</span>
+                            <span class="host-feature">Fire Extinguisher</span>
+                        </div>
+                        <p>Complete security system with cameras at entrance and 2nd floor, plus all necessary safety equipment for your protection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Perfect Location</h2>
+            <div class="testimonial-card">
+                <p class="testimonial-text">Located just 5 minutes walk from Ogi-Ohashi Station, our home offers convenient access to central Tokyo and Narita Airport. Nippori Station is only 10 minutes away by train, connecting you to major destinations across Tokyo.</p>
+                <div style="margin: 30px 0; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    <h3 style="margin-bottom: 20px; color: #e94560;">Transportation Times:</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px; padding: 10px; background: #f9f9f9; border-radius: 5px;">🚶‍♂️ <strong>5 min walk</strong> to Ogi-Ohashi Station</li>
+                        <li style="margin-bottom: 10px; padding: 10px; background: #f9f9f9; border-radius: 5px;">🚂 <strong>10 min train</strong> to Nippori Station</li>
+                        <li style="margin-bottom: 10px; padding: 10px; background: #f9f9f9; border-radius: 5px;">✈️ <strong>Easy access</strong> to Narita Airport</li>
+                        <li style="margin-bottom: 10px; padding: 10px; background: #f9f9f9; border-radius: 5px;">🏪 <strong>1 min walk</strong> to convenience store</li>
+                    </ul>
+                </div>
+                <div style="margin: 30px 0; text-align: center;">
+                    <h3 style="margin-bottom: 20px; color: #e94560;">Find Us on the Map</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.3603150639526!2d139.76685426969703!3d35.764535686491996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018930a05f76a0b%3A0x6c374822e7563f01!2sOgi%20Home!5e0!3m2!1sen!2sjp!4v1761144236972!5m2!1sen!2sjp" width="100%" height="300" style="border:0; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); max-width: 600px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Guests Say</h2>
+            <div class="hosts-grid">
+                <div class="host-card">
+                    <div class="host-info">
+                        <h3>Raymond</h3>
+                        <div class="host-features">
+                            <span class="host-feature">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>Being a solo traveller, it was really nice for the host to chat with you. I have never met a host like Dan before, great communication and always worry about his guests comfort and needs that far exceeded my expectations of the price I paid. The place is really clean and was comfortable to stay at compared to other airbnbs I've stayed at during my 3 weeks in Japan. If you're looking for a place, I would highly recommend Dan as a host!</p>
+                    </div>
+                </div>
+                <div class="host-card">
+                    <div class="host-info">
+                        <h3>麦莉</h3>
+                        <div class="host-features">
+                            <span class="host-feature">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>房间：
+                        <br>房间在东京范围内已经是非常大的面积了。
+                        <br>房间内有需要的一切，干净的床，电视，微波炉，热水壶，冰箱，衣柜和衣架。
+                        <br>地理位置：
+                        <br>步行五分钟到电车站，后转乘JR。不管是去市区还是去成田机场都非常方便。
+                        <br>服务：
+                        <br>房东Dan先生非常热心！给我很好的照顾，让我可以好好休息一晚上。特别好！
+                        <br>推荐所有人住他们的房子！
+                        <br>如果下次来东京100%还要入住。</p>
+                    </div>
+                </div>
+                <div class="host-card">
+                    <div class="host-info">
+                        <h3>혜주</h3>
+                        <div class="host-features">
+                            <span class="host-feature">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>도쿄 숙소 찾으시는 한국분들!
+                        <br>여기 강력 추천합니다😊
+                        <br>Thank you Dan 😁 !!
+                        <br>✔️위치
+                        <br>신주쿠, 시부야 같은 중심부랑은 멀지만 이 동네가 주는 느낌이 정말 좋더라구요!
+                        <br>역에 내려 dan 하우스까지 걸어가는 장면을 잊지 못할 것 같아요~ :)
+                        <br>꿀팁은, 숙소가 나리타 공항과 가까운 닛포리역 부근이라 도착날 or 마지막날 이곳에서 묵으시면 동선이 깔끔할 거예요!
+                        <br>✔️숙소 컨디션
+                        <br>더할나위 없이 좋았어요! Dan이 집 자체를 굉장히 깔끔하고 감각적으로 꾸며두시는 분 같았어요. 실제로 건축학과이신지 궁금해서 마지막날 여쭤보았는데 와이프분의 감각이라 하시네요 ㅎㅎ
+                        <br>✔️호스트
+                        <br>Dan이 정말 친절하세요! 저희 떠나기 전에 주셨던 질문이 가장 인상에 남는데요, 이 숙소의 개선사항을 솔직하게 말해달라 하시더라구요.    어떤 일이건 피드백을 받고 더 발전시키려는 모습이 너무 좋아보였습니다!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">House Rules & Check-in Info</h2>
+            <div class="testimonial-card">
+                <div style="text-align: left; max-width: 700px; margin: 0 auto;">
+                    <h3 style="color: #e94560; margin-bottom: 15px;">Check-in & Check-out</h3>
+                    <p style="margin-bottom: 20px;">📅 <strong>Check-in:</strong> After 3:00 PM | <strong>Check-out:</strong> Before 11:00 AM</p>
+                    
+                    <h3 style="color: #e94560; margin-bottom: 15px;">House Rules</h3>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 20px;">
+                        <li style="margin-bottom: 8px;">👥 Maximum 2 guests</li>
+                        <li style="margin-bottom: 8px;">🚫 No pets allowed</li>
+                        <li style="margin-bottom: 8px;">🚭 No smoking</li>
+                        <li style="margin-bottom: 8px;">🔇 Quiet hours: 11:00 PM - 7:00 AM</li>
+                        <li style="margin-bottom: 8px;">🚫 No parties or events</li>
+                        <li style="margin-bottom: 8px;">📷 No commercial photography without consultation</li>
+                    </ul>
+                    
+                    <h3 style="color: #e94560; margin-bottom: 15px;">Access Information</h3>
+                    <p>🏠 Your private bedroom is on the left as you enter. Shared facilities include toilet on ground floor, washroom and bathroom on 2nd floor. Please refrain from using the kitchen and living room on the 2nd floor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Stay at Ogi Home</h2>
+            <p>To make a booking, contact us via Facebook or email (a little bit cheaper), or book directly through our Airbnb page (more convenient).</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+                <a href="https://www.facebook.com/ogihome" target="_blank" class="btn">📖 Facebook Message</a>
+                <a href="mailto:ogihome.tokyo@gmail.com" class="btn">📧 Send Email</a>
+            </div>
+            
+            <div style="margin-top: 50px; text-align: center;">
+                <h3 style="margin-bottom: 20px; color: #e94560;">Or Book Directly</h3>
+                <div class="airbnb-embed-frame" data-id="1210329992524924102" data-view="home" data-hide-price="true" style="width: 100%; max-width: 500px; height: 350px; margin: 0 auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;"><a href="https://www.airbnb.com/rooms/1210329992524924102?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">View On Airbnb</a><a href="https://www.airbnb.com/rooms/1210329992524924102?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Home in Tokyo</a><script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Ogi Home</h3>
+                    <p>Your comfortable home away in Tokyo. Quiet, spacious, and conveniently located near Nippori Station with easy access to Narita Airport.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Why Choose Us?</h3>
+                    <p>🏠 Extra spacious private room</p>
+                    <p>✈️ Convenient access to airport</p>
+                    <p>🚗 Free parking available (contact in advance)</p>
+                </div>
+                <div class="footer-column" id="contact">
+                    <h3>Contact Us</h3>
+                    <p><a href="mailto:ogihome.tokyo@gmail.com">ogihome.tokyo@gmail.com</a></p>
+                    <p><a href="https://www.facebook.com/ogihome" target="_blank">Facebook</a></p>
+                    <p><a href="https://www.airbnb.com/h/ogihome" target="_blank">Airbnb</a></p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Info</h3>
+                    <a href="#amenities">Amenities</a>
+                    <a href="#location">Location</a>
+                    <a href="#testimonials">House Rules</a>
+                    <a href="#booking">Book Now</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 OgiHome. All rights reserved. | 15 minutes by train from Nippori Station</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

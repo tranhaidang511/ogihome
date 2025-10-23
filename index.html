@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogi Home - Welcome</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.svg">
+</head>
+<body>
+    <script>
+        // Auto-redirect based on browser language
+        const userLang = navigator.language || navigator.userLanguage;
+        const langCode = userLang.substring(0, 2).toLowerCase();
+        
+        // Check if user has visited before
+        const savedLang = localStorage.getItem('ogiHomeLang');
+        
+        if (savedLang) {
+            window.location.href = savedLang + '/index.html';
+            return;
+        }
+
+        switch(langCode) {
+            case 'ja':
+                window.location.href = 'ja/index.html';
+                break;
+            case 'vi':
+                window.location.href = 'vi/index.html';
+                break;
+            default:
+                window.location.href = 'en/index.html';
+        }
+
+        const languageLinks = document.querySelectorAll('.language-option');
+
+        languageLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                const lang = href.replace('/', '');
+                localStorage.setItem('ogiHomeLang', lang);
+            });
+        });
+    </script>
+</body>
+</html>

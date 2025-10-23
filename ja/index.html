@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扇ホーム - 日暮里駅近くの快適な滞在</title>
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.svg">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Ogi Home</div>
+                <ul class="nav-links">
+                    <li><a href="#about">について</a></li>
+                    <li><a href="#amenities">設備</a></li>
+                    <li><a href="#location">立地</a></li>
+                    <li><a href="#reviews">レビュー</a></li>
+                    <li><a href="#booking">予約</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+                <div class="language-selector">
+                    <button class="language-btn" onclick="switchLanguage('en')">EN</button>
+                    <button class="language-btn active" onclick="switchLanguage('ja')">JP</button>
+                    <button class="language-btn" onclick="switchLanguage('vi')">VI</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-slideshow">
+            <div class="slide active" style="background-image: url('../img/slide-00.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-01.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-02.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-03.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-04.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-05.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-06.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-07.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-08.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-09.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-10.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-11.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-12.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-13.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-14.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-15.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-16.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-17.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-18.jpg')"></div>
+            <div class="slide" style="background-image: url('../img/slide-19.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-20.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-21.JPG')"></div>
+            <div class="slide" style="background-image: url('../img/slide-22.JPG')"></div>
+        </div>
+        
+        <button class="slideshow-nav prev" onclick="changeSlide(-1)">❮</button>
+        <button class="slideshow-nav next" onclick="changeSlide(1)">❯</button>
+        
+        <div class="slideshow-controls">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1>扇ホーム - 東京での快適な滞在</h1>
+                <div class="airbnb-badges" style="margin: 20px 0;">
+                    <span class="badge superhost">🏆 Airbnb スーパーホスト</span>
+                    <span class="badge guest-favorite">❤️ Airbnb ゲストのお気に入り</span>
+                </div>
+                <p>日暮里駅から電車でわずか15分。静かで新しい家での個室、便利な立地、成田空港への簡単なアクセス。</p>
+                <a href="#booking" class="btn">今すぐ予約</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="features">
+        <div class="container">
+            <h2 class="section-title">扇ホームを選ぶ理由</h2>
+            <div class="airbnb-achievements" style="text-align: center; margin-bottom: 40px;">
+                <p style="font-size: 18px; color: #666; margin-bottom: 15px;">Airbnbで優秀性を認められています</p>
+                <div class="airbnb-badges">
+                    <span class="badge superhost">🏆 Airbnb スーパーホスト</span>
+                    <span class="badge guest-favorite">❤️ Airbnb ゲストのお気に入り</span>
+                </div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>特別に広い</h3>
+                    <p>ゲストはこの家の広さを愛しています。静かで新しい家であなた専用の個室でのくつろいだ滞在。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚂</div>
+                    <h3>完璧な立地</h3>
+                    <p>王子神谷駅まで徒歩5分、日暮里駅まで15分、成田空港への便利なアクセス。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏪</div>
+                    <h3>近くのコンビニエンスストア</h3>
+                    <p>必要なものはすべて徒歩1分の場所にあります。深夜のショッピングや軽食に最適。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔑</div>
+                    <h3>セルフチェックイン</h3>
+                    <p>キーパッドでセルフチェックイン。午後3時以降いつでも簡単で便利な到着。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📶</div>
+                    <h3>高速WiFi</h3>
+                    <p>500Mbpsの高速インターネット接続で、仕事やエンターテイメントのニーズに対応。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚗</div>
+                    <h3>無料駐車場</h3>
+                    <p>敷地内に無料駐車スペースをご用意（事前にお問い合わせください）。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="amenities" class="hosts">
+        <div class="container">
+            <h2 class="section-title">設備・機能</h2>
+            <div class="hosts-grid">
+                <div class="host-card">
+                    <div class="host-image" style="background-image: url('../img/slide-03.JPG');"></div>
+                    <div class="host-info">
+                        <h3>個室</h3>
+                        <p>快適で設備完備</p>
+                        <div class="host-features">
+                            <span class="host-feature">ダブルベッド</span>
+                            <span class="host-feature">エアコン</span>
+                            <span class="host-feature">テレビ</span>
+                            <span class="host-feature">ミニ冷蔵庫</span>
+                            <span class="host-feature">電子レンジ</span>
+                            <span class="host-feature">電気ケトル</span>
+                        </div>
+                        <p>あなたの個室には快適な滞在のために必要なものがすべて揃っています：寝具、タオル、アイロン、収納、遮光カーテン。</p>
+                    </div>
+                </div>
+                <div class="host-card">
+                    <div class="host-image" style="background-image: url('../img/slide-13.JPG');"></div>
+                    <div class="host-info">
+                        <h3>バスルーム設備</h3>
+                        <p>共用ですが設備完備</p>
+                        <div class="host-features">
+                            <span class="host-feature">ドライヤー</span>
+                            <span class="host-feature">シャンプー</span>
+                            <span class="host-feature">コンディショナー</span>
+                            <span class="host-feature">ボディソープ</span>
+                            <span class="host-feature">温水</span>
+                        </div>
+                        <p>1階に共用トイレ、2階に洗面所とバスルーム。便利さのためにすべてのアメニティを提供。</p>
+                    </div>
+                </div>
+                <div class="host-card">
+                    <div class="host-image" style="background-image: url('../img/slide-01.JPG');"></div>
+                    <div class="host-info">
+                        <h3>安全・セキュリティ</h3>
+                        <p>安心のために</p>
+                        <div class="host-features">
+                            <span class="host-feature">個室鍵</span>
+                            <span class="host-feature">防犯カメラ</span>
+                            <span class="host-feature">火災報知器</span>
+                            <span class="host-feature">消火器</span>
+                        </div>
+                        <p>玄関と2階に防犯カメラを設置した完全なセキュリティシステムと、あなたの安全のために必要なすべての安全設備。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">完璧な立地</h2>
+            <div class="testimonial-card">
+                <p class="testimonial-text">王子神谷駅から徒歩5分の便利な立地で、東京中心部と成田空港への便利なアクセスを提供します。日暮里駅まで電車で10分、東京の主要な目的地に接続されています。</p>
+                <div style="margin: 30px 0; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    <h3 style="margin-bottom: 20px; color: #e94560;">交通時間:</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px; padding: 10px; background: #f9f9f9; border-radius: 5px;">🚶‍♂️ <strong>徒歩5分</strong> 王子神谷駅まで</li>
+                        <li style="margin-bottom: 10px; padding: 10px; background: #f9f9f9; border-radius: 5px;">🚂 <strong>電車10分</strong> 日暮里駅まで</li>
+                        <li style="margin-bottom: 10px; padding: 10px; background: #f9f9f9; border-radius: 5px;">✈️ <strong>簡単アクセス</strong> 成田空港まで</li>
+                        <li style="margin-bottom: 10px; padding: 10px; background: #f9f9f9; border-radius: 5px;">🏪 <strong>徒歩1分</strong> コンビニまで</li>
+                    </ul>
+                </div>
+                <div style="margin: 30px 0; text-align: center;">
+                    <h3 style="margin-bottom: 20px; color: #e94560;">地図で場所を確認</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.3603150639526!2d139.76685426969703!3d35.764535686491996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018930a05f76a0b%3A0x6c374822e7563f01!2sOgi%20Home!5e0!3m2!1sen!2sjp!4v1761144236972!5m2!1sen!2sjp" width="100%" height="300" style="border:0; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); max-width: 600px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">ゲストの声</h2>
+            <div class="hosts-grid">
+                <div class="host-card">
+                    <div class="host-info">
+                        <h3>Raymond</h3>
+                        <div class="host-features">
+                            <span class="host-feature">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>Being a solo traveller, it was really nice for the host to chat with you. I have never met a host like Dan before, great communication and always worry about his guests comfort and needs that far exceeded my expectations of the price I paid. The place is really clean and was comfortable to stay at compared to other airbnbs I've stayed at during my 3 weeks in Japan. If you're looking for a place, I would highly recommend Dan as a host!</p>
+                    </div>
+                </div>
+                <div class="host-card">
+                    <div class="host-info">
+                        <h3>麦莉</h3>
+                        <div class="host-features">
+                            <span class="host-feature">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>房间：
+                        <br>房间在东京范围内已经是非常大的面积了。
+                        <br>房间内有需要的一切，干净的床，电视，微波炉，热水壶，冰箱，衣柜和衣架。
+                        <br>地理位置：
+                        <br>步行五分钟到电车站，后转乘JR。不管是去市区还是去成田机场都非常方便。
+                        <br>服务：
+                        <br>房东Dan先生非常热心！给我很好的照顾，让我可以好好休息一晚上。特别好！
+                        <br>推荐所有人住他们的房子！
+                        <br>如果下次来东京100%还要入住。</p>
+                    </div>
+                </div>
+                <div class="host-card">
+                    <div class="host-info">
+                        <h3>혜주</h3>
+                        <div class="host-features">
+                            <span class="host-feature">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>도쿄 숙소 찾으시는 한국분들!
+                        <br>여기 강력 추천합니다😊
+                        <br>Thank you Dan 😁 !!
+                        <br>✔️위치
+                        <br>신주쿠, 시부야 같은 중심부랑은 멀지만 이 동네가 주는 느낌이 정말 좋더라구요!
+                        <br>역에 내려 dan 하우스까지 걸어가는 장면을 잊지 못할 것 같아요~ :)
+                        <br>꿀팁은, 숙소가 나리타 공항과 가까운 닛포리역 부근이라 도착날 or 마지막날 이곳에서 묵으시면 동선이 깔끔할 거예요!
+                        <br>✔️숙소 컨디션
+                        <br>더할나위 없이 좋았어요! Dan이 집 자체를 굉장히 깔끔하고 감각적으로 꾸며두시는 분 같았어요. 실제로 건축학과이신지 궁금해서 마지막날 여쭤보았는데 와이프분의 감각이라 하시네요 ㅎㅎ
+                        <br>✔️호스트
+                        <br>Dan이 정말 친절하세요! 저희 떠나기 전에 주셨던 질문이 가장 인상에 남는데요, 이 숙소의 개선사항을 솔직하게 말해달라 하시더라구요.    어떤 일이건 피드백을 받고 더 발전시키려는 모습이 너무 좋아보였습니다!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">ハウスルール・チェックイン情報</h2>
+            <div class="testimonial-card">
+                <div style="text-align: left; max-width: 700px; margin: 0 auto;">
+                    <h3 style="color: #e94560; margin-bottom: 15px;">チェックイン・チェックアウト</h3>
+                    <p style="margin-bottom: 20px;">📅 <strong>チェックイン:</strong> 午後3:00以降 | <strong>チェックアウト:</strong> 午前11:00前</p>
+                    
+                    <h3 style="color: #e94560; margin-bottom: 15px;">ハウスルール</h3>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 20px;">
+                        <li style="margin-bottom: 8px;">👥 最大2名様まで</li>
+                        <li style="margin-bottom: 8px;">🚫 ペット不可</li>
+                        <li style="margin-bottom: 8px;">🚭 禁煙</li>
+                        <li style="margin-bottom: 8px;">🔇 静粛時間: 午後11:00 - 午前7:00</li>
+                        <li style="margin-bottom: 8px;">🚫 パーティー・イベント不可</li>
+                        <li style="margin-bottom: 8px;">📷 商業写真撮影は事前相談が必要</li>
+                    </ul>
+                    
+                    <h3 style="color: #e94560; margin-bottom: 15px;">アクセス情報</h3>
+                    <p>🏠 入り口を入って左側がお客様の個室です。共用施設は1階にトイレ、2階に洗面所とバスルームがあります。2階のキッチンとリビングルームの使用はご遠慮ください。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">扇ホームでのご滞在を予約</h2>
+            <p>予約するには、Facebookまたはメール（少し安く）、またはAirbnbページから直接予約（より便利）してください。</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+                <a href="https://www.facebook.com/ogihome" target="_blank" class="btn">📖 Facebookメッセージ</a>
+                <a href="mailto:ogihome.tokyo@gmail.com" class="btn">📧 メール送信</a>
+            </div>
+            
+            <div style="margin-top: 50px; text-align: center;">
+                <h3 style="margin-bottom: 20px; color: #e94560;">または直接予約</h3>
+                <div class="airbnb-embed-frame" data-id="1210329992524924102" data-view="home" data-hide-price="true" style="width: 100%; max-width: 500px; height: 350px; margin: 0 auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;"><a href="https://www.airbnb.com/rooms/1210329992524924102?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">Airbnbで見る</a><a href="https://www.airbnb.com/rooms/1210329992524924102?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">東京の家</a><script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>扇ホーム</h3>
+                    <p>東京での快適な第二の家。静かで広く、日暮里駅近くの便利な立地で成田空港へのアクセスも簡単。</p>
+                </div>
+                <div class="footer-column">
+                    <h3>選ばれる理由</h3>
+                    <p>🏠 特別に広い個室</p>
+                    <p>✈️ 空港への便利なアクセス</p>
+                    <p>🚗 無料駐車場完備（事前連絡要）</p>
+                </div>
+                <div class="footer-column" id="contact">
+                    <h3>お問い合わせ</h3>
+                    <p><a href="mailto:ogihome.tokyo@gmail.com">ogihome.tokyo@gmail.com</a></p>
+                    <p><a href="https://www.facebook.com/ogihome" target="_blank">Facebook</a></p>
+                    <p><a href="https://www.airbnb.com/h/ogihome" target="_blank">Airbnb</a></p>
+                </div>
+                <div class="footer-column">
+                    <h3>クイック情報</h3>
+                    <a href="#amenities">設備</a>
+                    <a href="#location">立地</a>
+                    <a href="#testimonials">ハウスルール</a>
+                    <a href="#booking">今すぐ予約</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 扇ホーム. All rights reserved. | 日暮里駅まで電車で15分</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
