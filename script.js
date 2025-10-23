@@ -53,13 +53,13 @@ function switchLanguage(lang) {
     
     switch(lang) {
         case 'ja':
-            window.location.href = '../ja/index.html';
+            window.location.href = '../ja/';
             break;
         case 'vi':
-            window.location.href = '../vi/index.html';
+            window.location.href = '../vi/';
             break;
         default:
-            window.location.href = '../en/index.html';
+            window.location.href = '../en/';
     }
 }
 
