@@ -10,37 +10,34 @@
 <body>
     <script>
         // Auto-redirect based on browser language
-        const userLang = navigator.language || navigator.userLanguage;
-        const langCode = userLang.substring(0, 2).toLowerCase();
-        
-        // Check if user has visited before
-        const savedLang = localStorage.getItem('ogiHomeLang');
-        
-        if (savedLang) {
-            window.location.href = savedLang + '/index.html';
-            return;
-        }
+        function detectAndRedirect() {
+            // Check if user has visited before
+            const savedLang = localStorage.getItem('ogiHomeLang');
+            
+            if (savedLang) {
+                window.location.href = savedLang + '/index.html';
+                return;
+            }
+            
+            const userLang = navigator.language || navigator.userLanguage;
+            const langCode = userLang.substring(0, 2).toLowerCase();
+            switch(langCode) {
+                case 'ja':
+                    localStorage.setItem('ogiHomeLang', 'ja');
+                    window.location.href = 'ja/index.html';
+                    break;
+                case 'vi':
+                    localStorage.setItem('ogiHomeLang', 'vi');
+                    window.location.href = 'vi/index.html';
+                    break;
+                default:
+                    localStorage.setItem('ogiHomeLang', 'en');
+                    window.location.href = 'en/index.html';
+            }
+        };
 
-        switch(langCode) {
-            case 'ja':
-                window.location.href = 'ja/index.html';
-                break;
-            case 'vi':
-                window.location.href = 'vi/index.html';
-                break;
-            default:
-                window.location.href = 'en/index.html';
-        }
-
-        const languageLinks = document.querySelectorAll('.language-option');
-
-        languageLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                const lang = href.replace('/', '');
-                localStorage.setItem('ogiHomeLang', lang);
-            });
-        });
+        // Start auto-detection
+        detectAndRedirect();
     </script>
 </body>
 </html>
