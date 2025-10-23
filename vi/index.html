@@ -13,18 +13,25 @@
         <div class="container">
             <nav>
                 <div class="logo">Ogi Home</div>
-                <ul class="nav-links">
-                    <li><a href="#about">Giới Thiệu</a></li>
-                    <li><a href="#amenities">Tiện Ích</a></li>
-                    <li><a href="#location">Vị Trí</a></li>
-                    <li><a href="#reviews">Đánh Giá</a></li>
-                    <li><a href="#booking">Đặt Phòng</a></li>
-                    <li><a href="#contact">Liên Hệ</a></li>
-                </ul>
-                <div class="language-selector">
-                    <button class="language-btn" onclick="switchLanguage('en')">EN</button>
-                    <button class="language-btn" onclick="switchLanguage('ja')">JP</button>
-                    <button class="language-btn active" onclick="switchLanguage('vi')">VI</button>
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="#about">Giới Thiệu</a></li>
+                        <li><a href="#amenities">Tiện Ích</a></li>
+                        <li><a href="#location">Vị Trí</a></li>
+                        <li><a href="#reviews">Đánh Giá</a></li>
+                        <li><a href="#testimonials">Quy Định Nhà</a></li>
+                        <li><a href="#booking">Đặt Phòng</a></li>
+                    </ul>
+                    <div class="language-selector">
+                        <button class="language-btn" onclick="switchLanguage('en')">EN</button>
+                        <button class="language-btn" onclick="switchLanguage('ja')">JP</button>
+                        <button class="language-btn active" onclick="switchLanguage('vi')">VI</button>
+                    </div>
+                    <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
         </div>

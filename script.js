@@ -39,6 +39,41 @@ function currentSlide(index) {
     showSlide(currentSlideIndex);
 }
 
+// Mobile menu toggle function
+function toggleMobileMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+}
+
+// Close mobile menu when clicking on a link
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const mobileMenu = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                mobileMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const isClickInsideNav = document.querySelector('nav').contains(event.target);
+        
+        if (!isClickInsideNav && mobileMenu.classList.contains('active')) {
+            mobileMenu.classList.remove('active');
+            menuToggle.classList.remove('active');
+        }
+    });
+});
+
 // Language switching function
 function switchLanguage(lang) {
     // Save language preference
