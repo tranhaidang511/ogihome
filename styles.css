@@ -528,6 +528,15 @@ footer {
     .hero {
         padding-top: 80px;
     }
+    
+    .calendar-container {
+        margin: 0 10px;
+        max-width: 400px !important;
+    }
+    
+    .calendar-container iframe {
+        height: 300px !important;
+    }
 }
 
 .language-selector {
